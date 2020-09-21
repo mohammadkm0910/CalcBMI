@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="weight_colors">
+        <item>@color/blue500</item>
+        <item>@color/greenLight500</item>
+        <item>@color/yellow500</item>
+        <item>@color/red500</item>
+    </array>
+</resources>

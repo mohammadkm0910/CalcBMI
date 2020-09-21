@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Calc BMI</string>
+    <string name="introducing_work_app">محاسبه BMI بدن</string>
+    <string name="title_popup_menu">منو</string>
+    <string name="title_reload_app">تازه سازی</string>
+    <string name="height">ارتفاع</string>
+    <string name="weight">وزن</string>
+    <string name="name">نام:</string>
+    <string name="family">فامیل:</string>
+    <string name="centimeter">سانتیمتر</string>
+    <string name="name_user">نام کاربر</string>
+    <string name="family_user">فامیل</string>
+    <string name="confirmation">تایید</string>
+    <string name="kg">کلیوگرم</string>
+    <string name="lb">پوند</string>
+    <string name="meter">متر</string>
+    <string name="your_score_bmi">نمره BMI شما</string>
+    <string name="zero">0</string>
+    <string name="your_category">دسنه شما</string>
+    <string name="range_your_healthy_weight">حداکثر وزن سالم شما:</string>
+    <string name="description_under_weight">
+        BMI شما کمتر از 18.5 می باشد که نشانگر کمبود وزن می باشد. بنابرین بهتر است کمی وزن اضافه کنید. می توانید از دکتر یا متخصص تغذیه کمک بگیرید.
+    </string>
+    <string name="description_healthy_weight">
+        تبریک می گویم! BMI شما نشان می دهد که وزن مناسبی برای قد خود دارید. با حفظ وزن سالم، خطر ابتلا به مشکلات جدی سلامتی را کاهش می دهید.
+    </string>
+    <string name="description_pre_obesity_weight">
+        BMI شما 25-29.9 را نشان میدهد که نشان میدهد کمی اضافه وزن دارید. به دلایل سلامتی مممکن است به شما توصیه شود که مقداری از وزن خود را کم کنید. به شما توصیه می شود برای مشاوره با پژشک و یا یک متخصص تغذیه صحبت کنید.
+    </string>
+    <string name="description_obesity_weight">
+        BMI شما بالای 30 را نشان میدهد که نشان دهنده این است که به شدت اضافه وزن دارید اگر لاغر نشوید ممکن در معرض خطر باشید. به شما توصیه می شود برای مشاوره با پژشک و یا یک متخصص تغذیه مراجعه کنید.
+    </string>
+    <string name="under_weight">کم وزن</string>
+    <string name="healthy_weight">وزن مناسب</string>
+    <string name="pre_obesity_weight">قبل از چاقی</string>
+    <string name="obesity_weight_class_one">کلاس چاقی I</string>
+    <string name="obesity_weight_class_two">کلاس چاقی II</string>
+    <string name="obesity_weight_class_three">کلاس چاقی III</string>
+</resources>
