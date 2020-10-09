@@ -25,4 +25,11 @@
     <color name="greenLight500Alpha">#9F8BC34A</color>
     <color name="yellow500Alpha">#9FFFEB3B</color>
     <color name="red500Alpha">#9FF44336</color>
+
+
+
+
+    <color name="rb_default_fill_color">#2196F3</color>
+    <color name="rb_default_disabled_color">#d8d8d8</color>
+    <color name="rb_darken_color">#10000000</color>
 </resources>

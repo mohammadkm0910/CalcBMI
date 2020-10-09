@@ -12,6 +12,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
+import com.example.calc.calc.bmi.design.DrawableRounded
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.math.roundToInt
 
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(actionbarTop)
         saveApp = SaveApp(applicationContext)
         calculatorBmi = CalculatorBmi()
+        containerBmiScore.background = DrawableRounded.createRoundedRectangleDrawable(ContextCompat.getColor(this,R.color.orange800))
         dialogUserName()
         initSpinner()
         seekBarBmi.setMaxPosition(100)
@@ -41,37 +43,37 @@ class MainActivity : AppCompatActivity() {
                 when (result) {
                     in 0..18 -> {
                         containerBmiColor.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.blue500));
-                        containerBmiScore.setBackgroundResource(R.drawable.background_container_round_under_weight)
+                        containerBmiScore.background = DrawableRounded.createRoundedRectangleDrawable(ContextCompat.getColor(this,R.color.blue500Alpha))
                         textMsgInfoWeight.text = getString(R.string.under_weight)
                         textDescriptionBmi.text = getString(R.string.description_under_weight)
                     }
                     in 18..25 -> {
                         containerBmiColor.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.greenLight500))
-                        containerBmiScore.setBackgroundResource(R.drawable.background_container_round_healthy_weight)
+                        containerBmiScore.background = DrawableRounded.createRoundedRectangleDrawable(ContextCompat.getColor(this,R.color.greenLight500Alpha))
                         textMsgInfoWeight.text = getString(R.string.healthy_weight)
                         textDescriptionBmi.text = getString(R.string.description_healthy_weight)
                     }
                     in 25..30 -> {
                         containerBmiColor.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.yellow500))
-                        containerBmiScore.setBackgroundResource(R.drawable.background_container_round_pre_obesity_weight)
+                        containerBmiScore.background = DrawableRounded.createRoundedRectangleDrawable(ContextCompat.getColor(this,R.color.yellow500Alpha))
                         textMsgInfoWeight.text = getString(R.string.pre_obesity_weight)
                         textDescriptionBmi.text = getString(R.string.description_pre_obesity_weight)
                     }
                     in 30..35 ->{
                         containerBmiColor.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.red500))
-                        containerBmiScore.setBackgroundResource(R.drawable.background_container_round_obesity_weight)
+                        containerBmiScore.background = DrawableRounded.createRoundedRectangleDrawable(ContextCompat.getColor(this,R.color.red500Alpha))
                         textMsgInfoWeight.text = getString(R.string.obesity_weight_class_one)
                         textDescriptionBmi.text = getString(R.string.description_obesity_weight)
                     }
                     in 35..40 -> {
                         containerBmiColor.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.red500))
-                        containerBmiScore.setBackgroundResource(R.drawable.background_container_round_obesity_weight)
+                        containerBmiScore.background = DrawableRounded.createRoundedRectangleDrawable(ContextCompat.getColor(this,R.color.red500Alpha))
                         textMsgInfoWeight.text = getString(R.string.obesity_weight_class_two)
                         textDescriptionBmi.text = getString(R.string.description_obesity_weight)
                     }
                     else -> {
                         containerBmiColor.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.red500))
-                        containerBmiScore.setBackgroundResource(R.drawable.background_container_round_obesity_weight)
+                        containerBmiScore.background = DrawableRounded.createRoundedRectangleDrawable(ContextCompat.getColor(this,R.color.red500Alpha))
                         textMsgInfoWeight.text = getString(R.string.obesity_weight_class_three)
                         textDescriptionBmi.text = getString(R.string.description_obesity_weight)
                     }
@@ -111,7 +113,7 @@ class MainActivity : AppCompatActivity() {
             edtHeight.text?.clear()
             edtWeight.text?.clear()
             containerBmiColor.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.colorAccent))
-            containerBmiScore.setBackgroundResource(R.drawable.background_container_round)
+            containerBmiScore.background = DrawableRounded.createRoundedRectangleDrawable(ContextCompat.getColor(this,R.color.orange800))
             containerBmiScore.text = getString(R.string.zero)
             seekBarBmi.colorBarPosition = 0
             textMsgInfoWeight.text = getString(R.string.healthy_weight)
@@ -183,5 +185,7 @@ class MainActivity : AppCompatActivity() {
         val animCalc = AnimatedVectorDrawableCompat.create(this,R.drawable.calc_anim)
         btnCalcBMI.setImageDrawable(animCalc)
         animCalc!!.start()
+        val ages = arrayListOf(20,25,90,70,69)
+
     }
 }

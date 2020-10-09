@@ -159,9 +159,11 @@
                 android:layout_width="100dp"
                 android:layout_height="60dp"
                 android:text="@string/zero"
+                android:background="@drawable/background_container_round"
                 android:textSize="24sp"
                 android:clickable="false"
-                android:background="@drawable/background_container_round"/>
+
+                />
             <TextView
                 android:id="@+id/textCategory"
                 android:layout_below="@+id/textScoreBmi"
